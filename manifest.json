@@ -1,0 +1,15 @@
+{
+    "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+    "short_name": "MikeCriggs",
+    "name": "Mike Criggs",
+    "description": "My personal web page :D",
+    "icons": [{
+        "src": "/favicon.ico",
+        "sizes": "128x128",
+        "type": "image/png"
+    }],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#181818",
+    "background_color": "#f0f0f0"
+}
