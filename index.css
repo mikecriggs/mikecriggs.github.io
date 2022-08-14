@@ -94,3 +94,44 @@ main div {
         scroll-behavior: auto !important;
     }
 }
+
+@media screen and (max-width: 800px) {
+    main {
+        grid-template-columns: auto;
+    }
+
+    main div {
+        margin-right: 0;
+    }
+
+    #content {
+        float: unset;
+        padding: 0;
+    }
+
+    main #navigation {
+        grid-row: 1;
+        text-align: center;
+        margin: 0.1em;
+    }
+
+    main #navigation h2 {
+        font-size: 1.1em;
+        margin-left: 0.2em;
+    }
+
+    main #navigation h2::before {
+        content: "(";
+    }
+
+    main #navigation h2::after {
+        content: ")";
+    }
+
+    main #navigation * {
+        list-style: none;
+        display: inline;
+        padding: 0;
+        margin-right: 0.2em;
+    }
+}
