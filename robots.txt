@@ -1,0 +1,4 @@
+User-agent: *
+Allow: *
+Sitemap: https://mikecriggs.github.io/sitemap.xml
+

@@ -1,0 +1,137 @@
+:root {
+    color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    word-wrap: break-word;
+
+    background-color: #181818;
+    color: #f0f0f0;
+    font-family: sans-serif;
+
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+code,
+code *,
+pre,
+pre * {
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+}
+
+body {
+    margin: auto;
+    padding: 2rem;
+    max-height: 100%;
+    max-width: 1000px;
+    text-rendering: optimizeSpeed;
+}
+
+h1 {
+    text-align: center;
+    margin: 1em;
+    font-size: 2em;
+}
+
+a {
+    text-decoration: none;
+    text-shadow: 0px 0px 6px white;
+}
+
+code {
+    white-space: pre-wrap !important;
+}
+
+.center {
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+main div {
+    margin-right: 5em;
+}
+
+#content {
+    float: left;
+    height: 100%;
+    overflow: auto;
+    padding: 0.5em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        -webkit-animation-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+
+        -webkit-animation-iteration-count: 1 !important;
+        animation-iteration-count: 1 !important;
+
+        -webkit-transition-duration: 0.01ms !important;
+        -o-transition-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+
+        scroll-behavior: auto !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        grid-template-columns: auto;
+    }
+
+    main div {
+        margin-right: 0;
+    }
+
+    #content {
+        float: unset;
+        padding: 0;
+    }
+
+    main #navigation {
+        grid-row: 1;
+        text-align: center;
+        margin: 0.1em;
+    }
+
+    main #navigation h2 {
+        font-size: 1.1em;
+        margin-left: 0.2em;
+    }
+
+    main #navigation h2::before {
+        content: "(";
+    }
+
+    main #navigation h2::after {
+        content: ")";
+    }
+
+    main #navigation * {
+        list-style: none;
+        display: inline;
+        padding: 0;
+        margin-right: 0.2em;
+    }
+}
